@@ -75,6 +75,9 @@ if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) {
             } else {
                 return when.resolve(null);
             }
+        },
+        default: {
+            permissions: "read"
         }
     }
 }
