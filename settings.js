@@ -44,7 +44,8 @@ var settings = module.exports = {
     httpStatic: path.join(__dirname,"public"),
 
     functionGlobalContext: {
-            request:require('request-promise')
+            request:require('request-promise'),
+            parsoid:require('parsoid')
         },
 
     storageModule: require("./pgstorage"),
